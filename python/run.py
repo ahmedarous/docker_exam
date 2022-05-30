@@ -4,7 +4,7 @@ app = Flask(__name__, static_folder='/myvol')
 
 @app.route("/index")
 def start():
-    return send_from_directory('/myvol/', "index.html")
+    return render_template( "index.html")
 
 
 @app.route("/hello")
